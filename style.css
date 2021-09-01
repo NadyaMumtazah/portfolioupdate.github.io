@@ -62,7 +62,7 @@ body {
 }
 .btn:hover {
     cursor: pointer;
-    background-color: grey;
+    background-color: #DAD0C2;
 }
 
 @media (max-width: 992px) {
