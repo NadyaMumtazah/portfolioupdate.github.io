@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --fontFam : 'Inter';
+    --bodyColor : #00303F;
+}
+body {
+    color: var(--bodyColor);
+    font-family: var(--fontFam);
+    animation: fadein 3s;
+}
+nav {
+    font-family: var(--fontFam);
+}
+.date {
+    padding-top: 12vh;
+    text-align: right;
+}
+
+/* image size*/
+.content img {
+    width: 300px;
+    height: 300px;
+}
+
+/* main */
+.content {
+    text-align: center;
+}
+.profile, .reveal {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 2s all ease-in-out;
+}
+.header {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header i{
+    font-size: 30px;
+    padding-left: 10px;
+}
+.illustration {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.edu-track {
+    margin: 5px 0px;
+}
+.skills, .experiences {
+    padding-top: 30px;
+}
+.skills i {
+    font-size: 70px;
+}
+.skill {
+    padding-top: 20px;
+}
+.card {
+    margin-top: 20px;
+}
+footer {
+    margin-top: 50px;
+    padding: 30px 0px;
+    width: 100%;
+    background-color: #132C33;
+    color: #CDF0EA;
+    font-family: var(--fontFam);
+    font-size: 15px;
+}
+footer i {
+    font-size: 20px;
+    padding: 0px 10px;
+    color: #E4EFE7;
+}
+footer i:hover {
+    color: #AAAAAA;
+}
+footer ul {
+    list-style: none;
+}
+.contact li {
+    display: inline-block;
+}
+
+
+
+/* Desktop version */
+@media (min-width: 992px) {
+    nav {
+        background-color: #F8F5F1;
+    }
+    .content {
+        text-align: left;
+        align-items: center;
+    }
+    .header {
+        padding: 10px 0px;
+        justify-content: flex-start;
+    }
+    .illustration {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .education-track {
+        flex-direction: row-reverse;
+    }
+    .text {
+        width: 50%;
+    }
+    
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.nav-active {
+    transition: transform 0.5s ease-in;
+    transform: translateX(0%);
+}
+.content-appear {
+    transform: translateY(0px);
+    opacity: 1;
+}
