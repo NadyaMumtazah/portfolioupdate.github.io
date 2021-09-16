@@ -21,6 +21,7 @@ nav {
 .date {
     padding-top: 12vh;
     text-align: right;
+    font-size: 12px;
 }
 
 /* image size*/
@@ -97,6 +98,9 @@ footer ul {
 @media (min-width: 992px) {
     nav {
         background-color: #F8F5F1;
+    }
+    .date {
+        font-size: 20px;
     }
     .content {
         text-align: left;
